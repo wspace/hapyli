@@ -1,0 +1,310 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+        <title>The HaPyLi Programming Language - Expressions</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- master box -->
+	
+<meta property="og:site_name" content="The HaPyLi Programming Language" />
+<meta property="og:title" content="Expressions" />
+
+<link rel="stylesheet" type="text/css" href="http://static.websimages.com/static/global/theme/css/pluggables.css"/>
+<noscript></noscript><!-- --><script type="text/javascript" src="http://www.freewebs.com/p.js"></script><script type="text/javascript" src="http://static.websimages.com/static/global/js/webs/usersites/webs_common.js"></script>
+<script type="text/javascript" src="http://static.websimages.com/static/global/js/webs/websover.min.js"></script><link id="templatebase" rel="stylesheet" type="text/css" media="screen" href="http://static.websimages.com/static/global/css/templatebase.css">
+<link id="fw_template_file" rel="stylesheet" type="text/css" href="http://hapyli.webs.com/.design.css?r=246" media="screen">
+	<link rel="stylesheet" type="text/css" href="http://images.freewebs.com/Members/Generationz/Standard/PrintCSS/print.css" media="print">
+</head>
+<body class="hasOneColumn hasSidebar navtype-Top" >
+
+<script>var fw_a_cats = ['00'];var fw_a_sizes = ['300x250'];var fw_a_slots = ['user_bbtemplate_300x250'];</script><!-- PUT THIS TAG IN THE head SECTION -->
+<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+</script>
+<script type="text/javascript">
+  GS_googleAddAdSenseService("ca-pub-4763110844767107");
+  GS_googleEnableAllServices();
+</script>
+<script type="text/javascript">
+if(fw_a_cats) {
+  for(var i=0;i<fw_a_cats.length;i++) {
+    GA_googleAddAttr('cat', fw_a_cats[0]);
+  }
+}
+if(typeof(fw_a_wl) != 'undefined') {
+  GA_googleAddAttr('wl', fw_a_wl);
+}
+</script>
+<script type="text/javascript">
+if(fw_a_slots) {
+  for(var i=0;i<fw_a_slots.length;i++) {
+    GA_googleAddSlot("ca-pub-4763110844767107", fw_a_slots[i]);
+  }
+}
+</script>
+<script type="text/javascript">
+  GA_googleFetchAds();
+</script>
+<!-- END OF TAG FOR head SECTION -->
+<script type="text/javascript" src="http://static.websimages.com/JS/fw.js"></script>
+<!--
+{NavHeaderFormat}
+<li class="fw-navheader">{NavHeader}</li>
+{/NavHeaderFormat}
+
+
+
+-->
+
+<div id="fw-container">
+	<div id="fw-head">
+		<h1 id="fw-title"><a id="fw-titlelink" href="http://hapyli.webs.com/">The HaPyLi Programming Language</a></h1>
+		<h2 id="fw-smalltitle"></h2>
+		<div id="logo-div" class="fw-logo"></div>
+	</div>
+
+	<div id="fw-blockContainer">
+		<div id="fw-mainnavwrap">
+			<div id="fw-nav-menu">
+				<ul class="fw-nav-level-0">
+					<li><a class="section" href="http://hapyli.webs.com/" >Home</a></li>
+<li><a class="section" href="http://hapyli.webs.com/apps/forums/" >Forums</a></li>
+<li><a class="section" href="http://hapyli.webs.com/examples.htm" >Examples</a></li>
+
+				</ul>
+			</div>
+		</div>
+
+
+		<div id="fw-bigcontain">
+			
+
+
+			<div id="fw-mainColumn">
+				<!-- ParagraphStart 577992687 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="577992687"></a><!-- ParagraphTitleStart --><b><font size="5">Section 2: Expressions</font></b> <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">HaPyLi is a typeless language. Every expression will evaluate to an integer, so it's up to the programmer to remember what data is passed to and returned by a function.</font></p><p>&#160;</p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 577992687 --><!-- ParagraphStart 577993136 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="577993136"></a><!-- ParagraphTitleStart -->Numeric Literals <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">HaPyLi defines three kinds of numeric literals - decimal integers, hexadecimal integers, and characters. These literals may be used in place of any expression, including a function body.</font></p><p><font size="2"><hr>
+<pre>
+    <a href="http://hapyli.webs.com/literal.hpl">File: literal.hpl</a>
+    
+        import "stdlib/base.hpl"
+
+        def f () = 42       ; You can declare "constant functions" too! Literals are 
+                            ; no different than any other expressions. 
+
+        def main () = 
+            let
+                a = 65      ; a, b, and c all equal the same value. 
+                b = 0x41
+                c = 'A'
+            in
+                (do (print-number a) (print-char '\n')
+                    (print-number b) (print-char '\n')
+                    (print-number c) (print-char '\n'))
+</pre>        
+<hr>
+</font></p><p>&#160;</p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 577993136 --><!-- ParagraphStart 577993274 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="577993274"></a><!-- ParagraphTitleStart -->String Literals <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">Strings are slightly different than other literals. The HaPyLi compiler converts them into null-terminated arrays of characters and stores them in Whitespace's heap memory. A String literal or a variable containing a string will evaluate to its address in heap memory.</font></p><p><font size="2">Both string and character literals support the following common character escape codes:</font></p><ul style="list-style: disc outside none"><li><font face="Courier New" size="2">\s -&#62; space</font></li><li><font face="Courier New" size="2">\t -&#62; tab</font></li><li><font face="Courier New" size="2">\r -&#62; carriage return</font></li><li><font face="Courier New" size="2">\n -&#62; line feed</font></li><li><font face="Courier New" size="2">\0 -&#62; null</font></li><li><font face="Courier New" size="2">\' -&#62; '</font></li><li><font face="Courier New" size="2">\&#34; -&#62; &#34;</font></li></ul><p><font size="2">In addition, any escaped character not listed above simply translates to itself.</font></p><p><font size="2">&#160;</font></p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 577993274 --><!-- ParagraphStart 577994075 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="577994075"></a><!-- ParagraphTitleStart -->Built-In Functions <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">So far, you've seen plenty of examples of seemingly &#34;built-in&#34; functions in HaPyLi, such as &#34;print-string&#34;, &#34;print-number&#34;, or the arithmetic operators. Actually, there is nothing special about these functions. They are defined within HaPyLi itself, in the file &#34;stdlib/base.hpl&#34;. This is possible because HaPyLi allows you to embed Whitespace commands directly in your applications.</font></p><p><font size="2">There are only two functions that are special to the compiler: &#34;if&#34; and &#34;do&#34;.</font></p><p>&#160;</p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 577994075 --><!-- ParagraphStart 577994444 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="577994444"></a><!-- ParagraphTitleStart -->If Expressions <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">Normally, when you call a function in HaPyLi all of its arguments are evaluated first, in order from left-to-right, and then the function itself is executed. If all functions behaved this way, it would be impossible to control the flow of the application. &#34;if&#34; is the only function which allows short circuiting.</font></p><p><font size="2">The syntax of &#34;if&#34; expressions in HaPyLi is the same as those in Lisp.</font></p><p><font size="2"><hr>
+<pre>
+
+    <a href="http://hapyli.webs.com/if.hpl">File: if.hpl</a>
+    
+        import "stdlib/base.hpl"
+
+        def main () = 
+            (if (read-number)
+                (print-string "TRUE")
+                (print-string "FALSE"))
+</pre>        
+<hr>
+</font></p><p><font size="2">&#160;Since HaPyLi is typeless, the condition of the if-statement behaves much as it would in C. The value 0 represents &#34;false&#34; and any non-zero value represents &#34;true&#34;. Some of the functions in the HaPyLi Standard Library, however, assume that &#34;true&#34; is denoted by the value 1 instead of just anything non-zero, so you must be careful.</font></p><p><font size="2">&#160;</font></p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 577994444 --><!-- ParagraphStart 577994707 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="577994707"></a><!-- ParagraphTitleStart -->Do Expressions <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">Sometimes you want to call several functions in order - a series of print functions, for example. Since all function calls evaluate their arguments in order from left-to-right, it's very easy to define a function to sequence operations together. Such a function doesn't actually have to do anything. Unfortunately, there's a small caveat to this approach as the example below illustrates:</font></p><p><font size="2"><hr>
+<pre>
+    <a href="hapyli.webs.com/execute.hpl">File: execute.hpl</a>
+    
+        import "stdlib/base.hpl"
+
+        def inline execute (x y) = 0        ; Perform two operations in order.
+        def inline execute (x y z) = 0      ; Perform three operations in order
+        def inline execute (w x y z) = 0    ; Perform four operations in order 
+                                            ; ... and so on
+        
+        def main () = 
+            (execute (print-string "ABCDEFG\n")
+                     (print-string "1234567\n"))
+</pre>        
+<hr>
+</font></p><p><font size="2">&#160;We don't need to do this. HaPyLi provides the &#34;do&#34; function, which can accept any number of parameters. You don't need to pollute your application with 100 'execute' definitions as above just because you want to chain together 100 operations (although I can't imagine you ever wanting to chain together more than just a few - but at least you now can).</font></p><p><font size="2"><hr>
+<pre>
+    <a href="http://hapyli.webs.com/do.hpl">File: do.hpl</a>
+    
+        import "stdlib/base.hpl"
+        
+        def main () = 
+            (do (print-string "Hello, ")
+                (print-string "world!\n")
+                (print-string "Testing\n")
+                (print-string "... and so on... \n"))
+</pre>        
+<hr>
+</font></p><p><font size="2">Furthermore, &#34;do&#34; expressions return the value returned by their last argument. This can be very useful for computing and returning a result after a series of IO operations, like in prompts.</font></p><p><font size="2"><hr>
+<pre>
+    <a href="http://hapyli.webs.com/prompt.hpl">File: prompt.hpl</a>
+    
+        import "stdlib/base.hpl"
+
+        def prompt () = 
+            (do (print-string "Enter your favorite number: ")
+                (read-number))
+
+        def main () = 
+            let
+                x = (prompt)
+            in
+                (do (print-string "You entered: ")
+                    (print-number x))
+</pre>        
+<hr>
+</font></p><p><font size="2">&#160;</font></p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 577994707 -->
+			</div>
+
+		</div>
+
+		<div id="fw-sidebar">
+
+<!--
+			  
+-->
+
+
+
+			<div id="fw-sidebarbegin"></div>
+			
+  			<div id="boxad">
+					<script type="text/javascript">
+  GA_googleFillSlot("user_bbtemplate_300x250");
+</script>
+			</div>
+			
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title">Tutorial</h3>
+				<div class="fw-text"><p><a href="http://hapyli.webs.com/functions.htm">1. Functions</a></p><p><a href="http://hapyli.webs.com/expressions.htm">2. Expressions</a></p><p><a href="http://hapyli.webs.com/variablesandtheheap.htm">3. Variables and the Heap</a></p><p><a href="http://hapyli.webs.com/embeddingwhitespace.htm">4. Embedding Whitespace</a></p><p>&#160;</p></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a href="http://hapyli.webs.com/apps/forums/">Recent Forum Posts</a></h3>
+				<div class="fw-text">
+
+
+	
+		<i>No recent posts</i>
+	
+
+
+</div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			
+			<div id="fw-sidebarend"></div>
+		</div>
+
+		<div class="clears"></div>
+	</div>
+    <div class="clears"></div>
+</div>
+
+<div id="fw-footer">
+	<p id="fw-foottext" class="fw-footertext">Copyright ©2010</p>
+	<p><script type="text/javascript">	
+function webURL() {
+window.location = 'http://www.webs.com/?referer=wftr-' + location.host + '&cm_mmc=Freewebs-_-Free%20Website-_-Freebar-_-static'
+}
+</script>
+
+<p style="float: left; font-size: 11px; text-align: left;">
+<a onclick="webURL(); return false;" href="http://www.webs.com/" value="Create a Free Website at Webs.com" title="Create a Free Website at Webs.com" class="fwftr-input-big fwftr-button">
+<span>Create a Free Website</span>
+</a>
+</p>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+if(typeof(_gaq) == 'undefined') {
+try {
+var pageTracker = _gat._getTracker("UA-230305-2");
+pageTracker._setDomainName("none");
+pageTracker._setAllowHash(false);
+pageTracker._setAllowLinker(true);
+pageTracker._trackPageview();
+} catch(err) {}
+}
+</script>
+
+<p id="wildfire" style="float:right; margin-right:5px;">
+	<script type="text/javascript">
+  		addthis_url    = location.href;   
+  		addthis_title  = document.title;  
+  		addthis_pub    = 'webs';     
+	</script>
+	<script type="text/javascript" src="http://s7.addthis.com/js/addthis_widget.php?v=12"></script>
+
+	<!--<script src="http://cdn.gigya.com/wildfire/JS/WFButton.js?module=share&partner=54291"></script>-->
+</p>
+</p>
+</div>
+
+<!--[if IE 6]>
+<script type="text/javascript" src="http://images.webs.com/static/global/js/webs/usersites/ie6subnav.js"></script>
+<![endif]-->
+<!-- --><script type="text/javascript" src="http://images.webs.com/static/global/js/webs/usersites/escort.js"></script><script type="text/javascript">if(typeof(urchinTracker)=='function'){_uacct="UA-230305-2";_udn="none";_uff=false;urchinTracker();}</script></body>
+</html>
+
+
+<!-- [SB] PageID 178510901-->
+<!-- appserver20 -->

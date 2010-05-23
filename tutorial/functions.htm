@@ -1,0 +1,310 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+        <title>The HaPyLi Programming Language - Functions</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- master box -->
+	
+<meta property="og:site_name" content="The HaPyLi Programming Language" />
+<meta property="og:title" content="Functions" />
+
+<link rel="stylesheet" type="text/css" href="http://static.websimages.com/static/global/theme/css/pluggables.css"/>
+<noscript></noscript><!-- --><script type="text/javascript" src="http://www.freewebs.com/p.js"></script><script type="text/javascript" src="http://static.websimages.com/static/global/js/webs/usersites/webs_common.js"></script>
+<script type="text/javascript" src="http://static.websimages.com/static/global/js/webs/websover.min.js"></script><link id="templatebase" rel="stylesheet" type="text/css" media="screen" href="http://static.websimages.com/static/global/css/templatebase.css">
+<link id="fw_template_file" rel="stylesheet" type="text/css" href="http://hapyli.webs.com/.design.css?r=246" media="screen">
+	<link rel="stylesheet" type="text/css" href="http://images.freewebs.com/Members/Generationz/Standard/PrintCSS/print.css" media="print">
+</head>
+<body class="hasOneColumn hasSidebar navtype-Top" >
+
+<script>var fw_a_cats = ['00'];var fw_a_sizes = ['300x250'];var fw_a_slots = ['user_bbtemplate_300x250'];</script><!-- PUT THIS TAG IN THE head SECTION -->
+<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+</script>
+<script type="text/javascript">
+  GS_googleAddAdSenseService("ca-pub-4763110844767107");
+  GS_googleEnableAllServices();
+</script>
+<script type="text/javascript">
+if(fw_a_cats) {
+  for(var i=0;i<fw_a_cats.length;i++) {
+    GA_googleAddAttr('cat', fw_a_cats[0]);
+  }
+}
+if(typeof(fw_a_wl) != 'undefined') {
+  GA_googleAddAttr('wl', fw_a_wl);
+}
+</script>
+<script type="text/javascript">
+if(fw_a_slots) {
+  for(var i=0;i<fw_a_slots.length;i++) {
+    GA_googleAddSlot("ca-pub-4763110844767107", fw_a_slots[i]);
+  }
+}
+</script>
+<script type="text/javascript">
+  GA_googleFetchAds();
+</script>
+<!-- END OF TAG FOR head SECTION -->
+<script type="text/javascript" src="http://static.websimages.com/JS/fw.js"></script>
+<!--
+{NavHeaderFormat}
+<li class="fw-navheader">{NavHeader}</li>
+{/NavHeaderFormat}
+
+
+
+-->
+
+<div id="fw-container">
+	<div id="fw-head">
+		<h1 id="fw-title"><a id="fw-titlelink" href="http://hapyli.webs.com/">The HaPyLi Programming Language</a></h1>
+		<h2 id="fw-smalltitle"></h2>
+		<div id="logo-div" class="fw-logo"></div>
+	</div>
+
+	<div id="fw-blockContainer">
+		<div id="fw-mainnavwrap">
+			<div id="fw-nav-menu">
+				<ul class="fw-nav-level-0">
+					<li><a class="section" href="http://hapyli.webs.com/" >Home</a></li>
+<li><a class="section" href="http://hapyli.webs.com/apps/forums/" >Forums</a></li>
+<li><a class="section" href="http://hapyli.webs.com/examples.htm" >Examples</a></li>
+
+				</ul>
+			</div>
+		</div>
+
+
+		<div id="fw-bigcontain">
+			
+
+
+			<div id="fw-mainColumn">
+				<!-- ParagraphStart 577983401 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="577983401"></a><!-- ParagraphTitleStart --><font size="5"><b>Section 1: Functions</b></font> <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p>&#160; </p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 577983401 --><!-- ParagraphStart 577983479 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="577983479"></a><!-- ParagraphTitleStart -->Hello World <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">Let's start with a simple &#34;hello world&#34; application to illustrate the HaPyLi syntax.<hr>
+<pre>
+    <a href="http://hapyli.webs.com/hello.hpl">File: hello.hpl</a>
+    
+        import "stdlib/base.hpl"
+        
+        def main() = (print-string "Hello, world!")
+
+        ; Program comments are denoted by the semi-colon character,
+        ; just as in LISP. 
+</pre>        
+<hr>
+</font></p><p><font size="2">All programs must define a &#34;main&#34; function (lower case) with zero parameters. The body of any function consists of just a single expression. In the above example, &#34;print-string&#34; is an imported function of one parameter.<br /><br />Function names may contain any of the following characters:</font></p><ul style="list-style: disc none outside"><li>&#160;<font face="Courier New" size="3">~ ! @ # $ % ^ &#38; * \ - _ + \ | : , &#60; . &#62; / ?</font></li><li><font size="2">any digit</font></li><li><font size="2">any letter</font></li></ul><br type="_moz" /><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 577983479 --><!-- ParagraphStart 577986632 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="577986632"></a><!-- ParagraphTitleStart -->Power <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">The next example defines a recursive function which accepts two arguments &#34;x&#34; and &#34;y&#34; and returns the value of &#34;x&#34; raised to the power of &#34;y&#34;. (Yes, this is a bad example because 'power' goes into an infinite loop if &#34;y&#34; is less than 1). Notice that there are no commas between function parameters.<hr>
+<pre>
+    <a href="http://hapyli.webs.com/power1.hpl">File: power1.hpl</a>
+    
+        import "stdlib/base.hpl"
+
+        def power(x y) = 
+            (if (== y 1)
+                x
+                (* x (power x (- y 1))))
+
+        def main() = (print-number (power 2 10))
+</pre>
+<hr>
+</font></p><p><font size="2">&#160;</font></p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 577986632 --><!-- ParagraphStart 577987632 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="577987632"></a><!-- ParagraphTitleStart -->Local Variables / Let Forms <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">Any function can contain one let-form before the main body to define local variables.</font></p><p><font size="2"><hr>
+<pre>
+    <a href="http://hapyli.webs.com/power2.hpl">File: power2.hpl</a>
+    
+        import "stdlib/base.hpl"
+
+        def power(x y) = 
+            (if (== y 1)
+                x
+                (* x (power x (- y 1))))
+
+        def main() = 
+            let 
+                x = (read-number)
+                y = (read-number)
+            in
+                (print-number (power x y))
+</pre>
+<hr>
+</font></p><p>&#160;</p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 577987632 --><!-- ParagraphStart 577989173 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="577989173"></a><!-- ParagraphTitleStart -->Function Overloading <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">HaPyLi does support a limited form of function overloading. Two functions are considered unique if they have either different names or if they accept different numbers of parameters.<hr>
+<pre>
+    <a href="http://hapyli.webs.com/params.hpl">File: params.hpl</a>
+    
+        import "stdlib/base.hpl"
+    
+        def f (a b) = (print-string "Two Parameters")
+    
+        def f (a b c) = (print-string "Three Parameters")
+    
+        def main() = (f 1 2 3)
+</pre>
+<hr>
+</font></p><p><font size="2">&#160;</font></p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 577989173 --><!-- ParagraphStart 577989608 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="577989608"></a><!-- ParagraphTitleStart -->Inline Functions <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">Due to the nature of the Whitespace virtual machine, ordinary function calls are extremely inefficient. For each &#34;call&#34; instruction in your program, Whitespace will search through every instruction in the entire program to find the appropriate label to jump to. To avoid this overhead, you may define functions to be inlined. Calls to inlined functions do not emit a &#34;call&#34; instruction, but are instead replaced by a copy of the entire function's body. The only restriction is that inlined functions cannot be recursive.</font></p><p><font size="2">I don't know of any method by which to determine whether a function should be inlined or not. Inlining a function will definitely increase the compiled program's size, so it may either increase or decrease overall performance.<hr>
+<pre>
+    <a href="http://hapyli.webs.com/inline.hpl">File: inline.hpl</a>
+
+        import "stdlib/base.hpl"
+
+        ; Because "sum" is marked as inline, calling it 
+        ; is no different than calling '+' directly. 
+        ; They will compile exactly the same.
+
+        def inline sum (a b) = (+ a b)
+
+        def main () = (print-number (sum 1 2))
+</pre>
+<hr>
+</font></p><p><font size="2">&#160;</font></p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 577989608 --><!-- ParagraphStart 577989983 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="577989983"></a><!-- ParagraphTitleStart -->Function Parameters and Return Values <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">Arguments to a function are always passed by value and every function returns exactly one value. Furthermore, a function's parameters and local variables are read-only. The values stored within them cannot be changed during the function's execution. These limitations can be overcome, however, by defining global variables or allocating arrays on heap memory and passing/returning pointers to these arrays. These techniques are discussed later.</font></p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 577989983 -->
+			</div>
+
+		</div>
+
+		<div id="fw-sidebar">
+
+<!--
+			  
+-->
+
+
+
+			<div id="fw-sidebarbegin"></div>
+			
+  			<div id="boxad">
+					<script type="text/javascript">
+  GA_googleFillSlot("user_bbtemplate_300x250");
+</script>
+			</div>
+			
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title">Tutorial</h3>
+				<div class="fw-text"><p><a href="http://hapyli.webs.com/functions.htm">1. Functions</a></p><p><a href="http://hapyli.webs.com/expressions.htm">2. Expressions</a></p><p><a href="http://hapyli.webs.com/variablesandtheheap.htm">3. Variables and the Heap</a></p><p><a href="http://hapyli.webs.com/embeddingwhitespace.htm">4. Embedding Whitespace</a></p><p>&#160;</p></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a href="http://hapyli.webs.com/apps/forums/">Recent Forum Posts</a></h3>
+				<div class="fw-text">
+
+
+	
+		<i>No recent posts</i>
+	
+
+
+</div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			
+			<div id="fw-sidebarend"></div>
+		</div>
+
+		<div class="clears"></div>
+	</div>
+    <div class="clears"></div>
+</div>
+
+<div id="fw-footer">
+	<p id="fw-foottext" class="fw-footertext">Copyright ©2010</p>
+	<p><script type="text/javascript">	
+function webURL() {
+window.location = 'http://www.webs.com/?referer=wftr-' + location.host + '&cm_mmc=Freewebs-_-Free%20Website-_-Freebar-_-static'
+}
+</script>
+
+<p style="float: left; font-size: 11px; text-align: left;">
+<a onclick="webURL(); return false;" href="http://www.webs.com/" value="Create a Free Website at Webs.com" title="Create a Free Website at Webs.com" class="fwftr-input-big fwftr-button">
+<span>Create a Free Website</span>
+</a>
+</p>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+if(typeof(_gaq) == 'undefined') {
+try {
+var pageTracker = _gat._getTracker("UA-230305-2");
+pageTracker._setDomainName("none");
+pageTracker._setAllowHash(false);
+pageTracker._setAllowLinker(true);
+pageTracker._trackPageview();
+} catch(err) {}
+}
+</script>
+
+<p id="wildfire" style="float:right; margin-right:5px;">
+	<script type="text/javascript">
+  		addthis_url    = location.href;   
+  		addthis_title  = document.title;  
+  		addthis_pub    = 'webs';     
+	</script>
+	<script type="text/javascript" src="http://s7.addthis.com/js/addthis_widget.php?v=12"></script>
+
+	<!--<script src="http://cdn.gigya.com/wildfire/JS/WFButton.js?module=share&partner=54291"></script>-->
+</p>
+</p>
+</div>
+
+<!--[if IE 6]>
+<script type="text/javascript" src="http://images.webs.com/static/global/js/webs/usersites/ie6subnav.js"></script>
+<![endif]-->
+<!-- --><script type="text/javascript" src="http://images.webs.com/static/global/js/webs/usersites/escort.js"></script><script type="text/javascript">if(typeof(urchinTracker)=='function'){_uacct="UA-230305-2";_udn="none";_uff=false;urchinTracker();}</script></body>
+</html>
+
+
+<!-- [SB] PageID 178507650-->
+<!-- appserver20 -->

@@ -1,0 +1,397 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+        <title>The HaPyLi Programming Language - Embedding Whitespace</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- master box -->
+	
+<meta property="og:site_name" content="The HaPyLi Programming Language" />
+<meta property="og:title" content="Embedding Whitespace" />
+
+<link rel="stylesheet" type="text/css" href="http://static.websimages.com/static/global/theme/css/pluggables.css"/>
+<noscript></noscript><!-- --><script type="text/javascript" src="http://www.freewebs.com/p.js"></script><script type="text/javascript" src="http://static.websimages.com/static/global/js/webs/usersites/webs_common.js"></script>
+<script type="text/javascript" src="http://static.websimages.com/static/global/js/webs/websover.min.js"></script><link id="templatebase" rel="stylesheet" type="text/css" media="screen" href="http://static.websimages.com/static/global/css/templatebase.css">
+<link id="fw_template_file" rel="stylesheet" type="text/css" href="http://hapyli.webs.com/.design.css?r=246" media="screen">
+	<link rel="stylesheet" type="text/css" href="http://images.freewebs.com/Members/Generationz/Standard/PrintCSS/print.css" media="print">
+</head>
+<body class="hasOneColumn hasSidebar navtype-Top" >
+
+<script>var fw_a_cats = ['00'];var fw_a_sizes = ['300x250'];var fw_a_slots = ['user_bbtemplate_300x250'];</script><!-- PUT THIS TAG IN THE head SECTION -->
+<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+</script>
+<script type="text/javascript">
+  GS_googleAddAdSenseService("ca-pub-4763110844767107");
+  GS_googleEnableAllServices();
+</script>
+<script type="text/javascript">
+if(fw_a_cats) {
+  for(var i=0;i<fw_a_cats.length;i++) {
+    GA_googleAddAttr('cat', fw_a_cats[0]);
+  }
+}
+if(typeof(fw_a_wl) != 'undefined') {
+  GA_googleAddAttr('wl', fw_a_wl);
+}
+</script>
+<script type="text/javascript">
+if(fw_a_slots) {
+  for(var i=0;i<fw_a_slots.length;i++) {
+    GA_googleAddSlot("ca-pub-4763110844767107", fw_a_slots[i]);
+  }
+}
+</script>
+<script type="text/javascript">
+  GA_googleFetchAds();
+</script>
+<!-- END OF TAG FOR head SECTION -->
+<script type="text/javascript" src="http://static.websimages.com/JS/fw.js"></script>
+<!--
+{NavHeaderFormat}
+<li class="fw-navheader">{NavHeader}</li>
+{/NavHeaderFormat}
+
+
+
+-->
+
+<div id="fw-container">
+	<div id="fw-head">
+		<h1 id="fw-title"><a id="fw-titlelink" href="http://hapyli.webs.com/">The HaPyLi Programming Language</a></h1>
+		<h2 id="fw-smalltitle"></h2>
+		<div id="logo-div" class="fw-logo"></div>
+	</div>
+
+	<div id="fw-blockContainer">
+		<div id="fw-mainnavwrap">
+			<div id="fw-nav-menu">
+				<ul class="fw-nav-level-0">
+					<li><a class="section" href="http://hapyli.webs.com/" >Home</a></li>
+<li><a class="section" href="http://hapyli.webs.com/apps/forums/" >Forums</a></li>
+<li><a class="section" href="http://hapyli.webs.com/examples.htm" >Examples</a></li>
+
+				</ul>
+			</div>
+		</div>
+
+
+		<div id="fw-bigcontain">
+			
+
+
+			<div id="fw-mainColumn">
+				<!-- ParagraphStart 578221490 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="578221490"></a><!-- ParagraphTitleStart --><b><font size="5">Section 4: Integrating Whitespace into HaPyLi Applications</font></b> <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p>&#160; </p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 578221490 --><!-- ParagraphStart 578221914 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="578221914"></a><!-- ParagraphTitleStart -->Whitespace Assembler <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">There are only two &#34;built-in&#34; expressions in HaPyLi, the &#34;if&#34; statement and the &#34;do&#34; statement. Everything else - including arithmetic and IO - are defined within HaPyLi. HaPyLi allows you to embed Whitespace commands directly into your applications.</font></p><p><font size="2">Of course, coding with nothing but spaces, tabs, and line feeds is tedious, unreadable, and error prone. HaPyLi includes within it a little assembly language that closely parallels Whitespace itself. The commands for this assembly language are listed below (please refer to the <a class="fw_link_website" href="http://compsoc.dur.ac.uk/whitespace/tutorial.php">Whitespace tutorial</a>).</font></p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 578221914 --><!-- ParagraphStart 578223883 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="578223883"></a><!-- ParagraphTitleStart --><font size="2"><b>Stack Manipulation</b></font> <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">Applicable operands are single-quoted character literals, decimal integers, and hexadecimal integers.</font></p><blockquote><p> <font face="Courier New">push n&#160;&#160;&#160;&#160;&#160; - push the number 'n' onto the stack.<br />dup&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Duplicate the top item on the stack.<br />copy n&#160;&#160;&#160;&#160;&#160; - Copy the 'n'th item on the stack onto the top of the stack.<br />swap&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Swap the top two items on the stack.<br />pop&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Discard the top item on the stack.<br />slide n&#160;&#160;&#160;&#160; - Slide 'n' items off the stack, keeping the top item. </font></p></blockquote><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 578223883 --><!-- ParagraphStart 578226217 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="578226217"></a><!-- ParagraphTitleStart --><font size="2"><b>Arithmetic</b></font> <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><blockquote><p> <font face="Courier New">add&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Addition<br />sub&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Subtraction<br />mul&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Multiplication<br />div&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Integer Division<br />mod&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Modulo</font></p></blockquote><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 578226217 --><!-- ParagraphStart 578226580 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="578226580"></a><!-- ParagraphTitleStart --><font size="2"><b>Heap Access</b></font> <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><blockquote><p> <font face="Courier New">store&#160;&#160;&#160;&#160;&#160;&#160; - Store<br />load&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Retrieve</font></p></blockquote><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 578226580 --><!-- ParagraphStart 578226972 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="578226972"></a><!-- ParagraphTitleStart --><font size="2"><b>Flow Control</b></font> <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">Applicable operands follow mostly the same syntax as HaPyLi identifiers. For example,&#160; &#34;label abc&#34; or &#34;call hello_world&#34;.</font></p><blockquote><p><font face="Courier New"> label x&#160;&#160;&#160;&#160; - Mark a location in the program. <br />call&#160; x&#160;&#160;&#160;&#160; - Call the subroutine.<br />jump&#160; x&#160;&#160;&#160;&#160; - Jump unconditionally to a label. <br />jz&#160;&#160;&#160; x&#160;&#160;&#160;&#160; - Jump to a label if the top of the stack is zero.<br />jn&#160;&#160;&#160; x&#160;&#160;&#160;&#160; - Jump to a label if the top of the stack is negative.<br />ret&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - End a subroutine and transfer control back to the caller.<br />end&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - End the program. </font></p></blockquote><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 578226972 --><!-- ParagraphStart 578228634 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="578228634"></a><!-- ParagraphTitleStart --><font size="2"><b>IO</b></font> <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><blockquote><p><font face="Courier New">pc&#160;&#160; -Print the character at the top of the stack.<br />pn&#160;&#160; -Print the number at the top of the stack.<br />rc&#160;&#160; -Read a character and place it in the location given by the top of the stack.<br />rn&#160;&#160; -Read a number and place it in the location given by the top of the stack.</font></p></blockquote><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 578228634 --><!-- ParagraphStart 578229462 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="578229462"></a><!-- ParagraphTitleStart --><font size="2"><b>Annotated Example</b></font> <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">Here's the Whitespace tutorial's example of a program which counts from 1 to 10, printing the current value as it goes - translated to HaPyLi + Whitespace Assembler.<hr>
+<pre>
+    <a href="http://hapyli.webs.com/count.hpl">File: count.hpl</a>
+
+        asm main () =
+        (
+            push    1           ; Put a 1 on the stack.
+            label   begin       ; Set a Label at this point.
+            dup                 ; Duplicate the top stack item.
+            pn                  ; Output the current value.
+            push    '\n'        ; Put a newline character on the stack...
+            pc                  ; ...and output the newline.
+            push    1           ; Put a 1 on the stack.
+            add                 ; Addition. This increments our current value.
+            dup                 ; Duplicate that value so we can test it.
+            push    11          ; Push 11 onto the stack.
+            sub                 ; Subtraction. So if we've reached the end, we have a
+                                ; zero on the stack.
+            jz      the_end     ; If we have a zero, jump to the end.
+            jump    begin       ; Jump to the start.
+            label   the_end     ; Set the end label.
+            
+        )
+</pre>
+<hr></font></p><p><font size="2">If you compare this with the example in the Whitespace tutorial, you'll notice that the last two instructions have been removed - namely, discarding the top item of the stack and explicitly calling &#34;end&#34;. In HaPyLi, all functions must leave exactly one item on the stack as a return value and the &#34;end&#34; instruction is added automatically by the compiler.</font></p><p>&#160;</p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 578229462 --><!-- ParagraphStart 578233035 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="578233035"></a><!-- ParagraphTitleStart -->Functions defined with Whitespace Assembler <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">Other than their bodies, the only difference between assembler functions and ordinary ones is the use of the &#34;asm&#34; keyword. Assembler functions can call and be called by any other function, they can be inlined, they can contain let-forms, and they always return a value.</font></p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 578233035 --><!-- ParagraphStart 578233092 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="578233092"></a><!-- ParagraphTitleStart --><b><font size="2">Handling Parameters / Local Variables</font></b> <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">The following example illustrates how to refer to parameters and local variables passed to a function through Whitespace Assembler. These variables are indexed starting from 0, in reverse order in which they're defined.</font></p><p><font size="2"><hr>
+<pre>
+
+    <a href="http://hapyli.webs.com/asmparams.hpl">File: asmparams.hpl</a>
+                
+        import "stdlib/base.hpl"
+
+        asm f (a b) = 
+            let
+                c = 2
+                d = 1
+            in
+            (
+                copy 3      ; Copy parameter 'a' and print it.
+                pn
+                push '\n'
+                pc 
+                
+                copy 2      ; Copy parameter 'b' and print it.
+                pn
+                push '\n' 
+                pc 
+
+                copy 1      ; Copy local variable 'c' and print it.
+                pn
+                push '\n' 
+                pc 
+                
+                copy 0      ; Copy local variable 'd' and print it.
+                pn
+                push '\n' 
+                pc
+                
+                pop         ; Pop the arguments and local variables
+                pop         ; off the top of the stack.
+                pop
+                pop
+                
+                push 0      ; Push the return value (just '0' in this case),
+                            ; onto the top of the stack. 
+            )
+
+        def main () = (print-number (f 4 3))
+</pre>
+<hr></font></p><p><font size="2">Note that we don't explicitly return from 'f'. The HaPyLi compiler automatically adds the &#34;ret&#34; instruction to non-inlined functions and inlined functions should never contain a &#34;ret&#34; anyway. Remember that 'inlined' functions are not actually called, but rather their bodies are copied verbatim to wherever the function is referenced. Hence, it doesn't make sense to return from an inline function.</font></p><p><font size="2"><b>*** IMPORTANT***</b><br />When coding in Whitespace Assembler, it is very easy to accidentally corrupt the stack, resulting in nasty and difficult to fix bugs. Functions always pop all of their arguments and local variables, and they push exactly one return value.</font></p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 578233092 --><!-- ParagraphStart 578234483 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="578234483"></a><!-- ParagraphTitleStart --><b><font size="2">Labels in Whitespace Assembler Functions</font></b> <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">Never use labels in inlined functions. A label must only be defined once in an entire application. Inlining an assembler function, however, copies its body - including any label instructions - to wherever the function is referenced.<hr>
+<pre>
+    <a href="http://hapyli.webs.com/inline_labels.hpl">File: inline_labels.hpl</a>
+                
+        import "stdlib/base.hpl"
+
+        asm inline f () = 
+        (
+            jump  HELLO
+            
+            label HELLO
+            push 0
+        )
+
+
+        def main () = 
+            (do (print-number (f))
+                (print-number (f)))
+
+</pre>
+<hr>
+</font></p><p><font size="2">The above program won't even compile because there are two definitions of the label HELLO. Remove the 'inline' modifier, then this program should work.</font></p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 578234483 --><!-- ParagraphStart 578234759 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="578234759"></a><!-- ParagraphTitleStart --><b><font size="2">Whitespace Assembler Calling Conventions</font></b> <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p><font size="2">All non-inlined functions in HaPyLi are marked by a label named according to the following convention: function name, followed by '~' (tilde character), followed by the number of parameters that the function accepts. The example below illustrates how to use this convention to call other HaPyLi functions from Whitespace Assembler.<hr>
+<pre>
+    <a href="http://hapyli.webs.com/asmcall.hpl">File: asmcall.hpl</a>
+        
+        import "stdlib/base.hpl"
+
+        def f () = (print-string "Hello!\n")
+        def f (*msg) = (print-string *msg)
+
+        asm main () = 
+            let 
+                *msg = "Goodbye!\n"
+            in
+            (
+                            ; f~0 accepts no arguments.
+                call f~0    ; Call f~0
+                pop         ; Pop the return value of f~0
+                
+                            ; f~1 accepts 1 argument.
+                copy 0      ; Pass in *msg. 
+                call f~1    ; Call f~1 
+                pop         ; Pop the return value of f~1
+                
+                pop         ; Pop parameters and local variables
+                            ; (just *msg in this case). 
+                
+                push 0      ; Push a return value.
+            )
+</pre>
+<hr></font></p><p><font size="2">Inlined functions cannot be called from Whitespace Assembler because they are not associated with any Whitespace labels.</font></p><p>&#160;</p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 578234759 --><!-- ParagraphStart 578234841 -->
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a name="578234841"></a><!-- ParagraphTitleStart -->The Heap Pointer <!-- ParagraphTitleEnd --></h3>
+				<div class="fw-text"><!-- ParagraphBodyStart --><p>The HaPyLi compiler automatically reserves memory on the heap for global variables and string literals. Afterward, it writes the address of the remaining, unallocated memory at address '0' on the heap. This is used by the HaPyLi Standard Library, especially the &#34;alloc&#34; and &#34;read-string&#34; functions, to dynamically allocate more memory at runtime.</p><p>The only time you'll ever mess with the heap pointer is when writing a new memory management system for HaPyLi. So, unless you really know what you're doing and you have far too much time on your hands, you should never have to worry about the heap pointer, ever.&#160;</p><!-- ParagraphBodyEnd --></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			<!-- ParagraphEnd 578234841 -->
+			</div>
+
+		</div>
+
+		<div id="fw-sidebar">
+
+<!--
+			  
+-->
+
+
+
+			<div id="fw-sidebarbegin"></div>
+			
+  			<div id="boxad">
+					<script type="text/javascript">
+  GA_googleFillSlot("user_bbtemplate_300x250");
+</script>
+			</div>
+			
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title">Tutorial</h3>
+				<div class="fw-text"><p><a href="http://hapyli.webs.com/functions.htm">1. Functions</a></p><p><a href="http://hapyli.webs.com/expressions.htm">2. Expressions</a></p><p><a href="http://hapyli.webs.com/variablesandtheheap.htm">3. Variables and the Heap</a></p><p><a href="http://hapyli.webs.com/embeddingwhitespace.htm">4. Embedding Whitespace</a></p><p>&#160;</p></div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			
+			<div class="fw-paragraph">
+				<div class="fw-paragraphtop"></div>
+				<h3 class="fw-title"><a href="http://hapyli.webs.com/apps/forums/">Recent Forum Posts</a></h3>
+				<div class="fw-text">
+
+
+	
+		<i>No recent posts</i>
+	
+
+
+</div>
+				<div class="fw-paragraphbottom"></div>
+			</div>
+			
+			<div id="fw-sidebarend"></div>
+		</div>
+
+		<div class="clears"></div>
+	</div>
+    <div class="clears"></div>
+</div>
+
+<div id="fw-footer">
+	<p id="fw-foottext" class="fw-footertext">Copyright ©2010</p>
+	<p><script type="text/javascript">	
+function webURL() {
+window.location = 'http://www.webs.com/?referer=wftr-' + location.host + '&cm_mmc=Freewebs-_-Free%20Website-_-Freebar-_-static'
+}
+</script>
+
+<p style="float: left; font-size: 11px; text-align: left;">
+<a onclick="webURL(); return false;" href="http://www.webs.com/" value="Create a Free Website at Webs.com" title="Create a Free Website at Webs.com" class="fwftr-input-big fwftr-button">
+<span>Create a Free Website</span>
+</a>
+</p>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+if(typeof(_gaq) == 'undefined') {
+try {
+var pageTracker = _gat._getTracker("UA-230305-2");
+pageTracker._setDomainName("none");
+pageTracker._setAllowHash(false);
+pageTracker._setAllowLinker(true);
+pageTracker._trackPageview();
+} catch(err) {}
+}
+</script>
+
+<p id="wildfire" style="float:right; margin-right:5px;">
+	<script type="text/javascript">
+  		addthis_url    = location.href;   
+  		addthis_title  = document.title;  
+  		addthis_pub    = 'webs';     
+	</script>
+	<script type="text/javascript" src="http://s7.addthis.com/js/addthis_widget.php?v=12"></script>
+
+	<!--<script src="http://cdn.gigya.com/wildfire/JS/WFButton.js?module=share&partner=54291"></script>-->
+</p>
+</p>
+</div>
+
+<!--[if IE 6]>
+<script type="text/javascript" src="http://images.webs.com/static/global/js/webs/usersites/ie6subnav.js"></script>
+<![endif]-->
+<!-- --><script type="text/javascript" src="http://images.webs.com/static/global/js/webs/usersites/escort.js"></script><script type="text/javascript">if(typeof(urchinTracker)=='function'){_uacct="UA-230305-2";_udn="none";_uff=false;urchinTracker();}</script></body>
+</html>
+
+
+<!-- [SB] PageID 178593520-->
+<!-- appserver20 -->
