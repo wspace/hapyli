@@ -2,8 +2,8 @@
 
 ## Whitespace Assembler
 
-There are only two "built-in" expressions in HaPyLi, the "if" statement and the
-"do" statement. Everything else - including arithmetic and IO - are defined
+There are only two "built-in" expressions in HaPyLi, the `if` statement and the
+`do` statement. Everything else - including arithmetic and IO - are defined
 within HaPyLi. HaPyLi allows you to embed Whitespace commands directly into your
 applications.
 
@@ -11,7 +11,7 @@ Of course, coding with nothing but spaces, tabs, and line feeds is tedious,
 unreadable, and error prone. HaPyLi includes within it a little assembly
 language that closely parallels Whitespace itself. The commands for this
 assembly language are listed below (please refer to the
-[Whitespace tutorial](http://compsoc.dur.ac.uk/whitespace/tutorial.php)).
+[Whitespace tutorial](https://web.archive.org/web/20150618184706/http://compsoc.dur.ac.uk/whitespace/tutorial.php)).
 
 ### Stack Manipulation
 
@@ -41,7 +41,7 @@ hexadecimal integers.
 ### Flow Control
 
 Applicable operands follow mostly the same syntax as HaPyLi identifiers. For
-example, "label abc" or "call hello_world".
+example, `label abc` or `call hello_world`.
 
     label x     - Mark a location in the program.
     call  x     - Call the subroutine.
@@ -53,10 +53,10 @@ example, "label abc" or "call hello_world".
 
 ### IO
 
-    pc   -Print the character at the top of the stack.
-    pn   -Print the number at the top of the stack.
-    rc   -Read a character and place it in the location given by the top of the stack.
-    rn   -Read a number and place it in the location given by the top of the stack.
+    pc          - Print the character at the top of the stack.
+    pn          - Print the number at the top of the stack.
+    rc          - Read a character and place it in the location given by the top of the stack.
+    rn          - Read a number and place it in the location given by the top of the stack.
 
 ### Annotated Example
 
@@ -90,14 +90,14 @@ asm main () =
 
 If you compare this with the example in the Whitespace tutorial, you'll notice
 that the last two instructions have been removed - namely, discarding the top
-item of the stack and explicitly calling "end". In HaPyLi, all functions must
-leave exactly one item on the stack as a return value and the "end" instruction
+item of the stack and explicitly calling `end`. In HaPyLi, all functions must
+leave exactly one item on the stack as a return value and the `end` instruction
 is added automatically by the compiler.
 
 ## Functions defined with Whitespace Assembler
 
 Other than their bodies, the only difference between assembler functions and
-ordinary ones is the use of the "asm" keyword. Assembler functions can call and
+ordinary ones is the use of the `asm` keyword. Assembler functions can call and
 be called by any other function, they can be inlined, they can contain
 let-forms, and they always return a value.
 
@@ -150,13 +150,13 @@ asm f (a b) =
 def main () = (print-number (f 4 3))
 ```
 
-Note that we don't explicitly return from 'f'. The HaPyLi compiler automatically
-adds the "ret" instruction to non-inlined functions and inlined functions should
-never contain a "ret" anyway. Remember that 'inlined' functions are not actually
+Note that we don't explicitly return from `f`. The HaPyLi compiler automatically
+adds the `ret` instruction to non-inlined functions and inlined functions should
+never contain a `ret` anyway. Remember that 'inlined' functions are not actually
 called, but rather their bodies are copied verbatim to wherever the function is
 referenced. Hence, it doesn't make sense to return from an inline function.
 
-<b>*** IMPORTANT ***</b>
+**IMPORTANT:**
 
 When coding in Whitespace Assembler, it is very easy to accidentally corrupt the
 stack, resulting in nasty and difficult to fix bugs. Functions always pop all of
@@ -188,12 +188,12 @@ def main () =
 ```
 
 The above program won't even compile because there are two definitions of the
-label HELLO. Remove the 'inline' modifier, then this program should work.
+label `HELLO`. Remove the `inline` modifier, then this program should work.
 
 ### Whitespace Assembler Calling Conventions
 
 All non-inlined functions in HaPyLi are marked by a label named according to the
-following convention: function name, followed by '~' (tilde character), followed
+following convention: function name, followed by `~` (tilde character), followed
 by the number of parameters that the function accepts. The example below
 illustrates how to use this convention to call other HaPyLi functions from
 Whitespace Assembler.
@@ -234,8 +234,8 @@ not associated with any Whitespace labels.
 
 The HaPyLi compiler automatically reserves memory on the heap for global
 variables and string literals. Afterward, it writes the address of the
-remaining, unallocated memory at address '0' on the heap. This is used by the
-HaPyLi Standard Library, especially the "alloc" and "read-string" functions, to
+remaining, unallocated memory at address `0` on the heap. This is used by the
+HaPyLi Standard Library, especially the `alloc` and `read-string` functions, to
 dynamically allocate more memory at runtime.
 
 The only time you'll ever mess with the heap pointer is when writing a new

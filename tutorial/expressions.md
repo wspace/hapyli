@@ -39,35 +39,35 @@ its address in heap memory.
 Both string and character literals support the following common character escape
 codes:
 
-- `\s -> space`
-- `\t -> tab`
-- `\r -> carriage return`
-- `\n -> line feed`
-- `\0 -> null`
-- `\' -> '`
-- `\" -> "`
+- `\s` -> space
+- `\t` -> tab
+- `\r` -> carriage return
+- `\n` -> line feed
+- `\0` -> null
+- `\'` -> `'`
+- `\"` -> `"`
 
 In addition, any escaped character not listed above simply translates to itself.
 
 ## Built-In Functions
 
 So far, you've seen plenty of examples of seemingly "built-in" functions in
-HaPyLi, such as "print-string", "print-number", or the arithmetic operators.
+HaPyLi, such as `print-string`, `print-number`, or the arithmetic operators.
 Actually, there is nothing special about these functions. They are defined
-within HaPyLi itself, in the file "stdlib/base.hpl". This is possible because
+within HaPyLi itself, in the file `stdlib/base.hpl`. This is possible because
 HaPyLi allows you to embed Whitespace commands directly in your applications.
 
-There are only two functions that are special to the compiler: "if" and "do".
+There are only two functions that are special to the compiler: `if` and `do`.
 
 ## If Expressions
 
 Normally, when you call a function in HaPyLi all of its arguments are evaluated
 first, in order from left-to-right, and then the function itself is executed. If
 all functions behaved this way, it would be impossible to control the flow of
-the application. "if" is the only function which allows short
+the application. `if` is the only function which allows short
 circuiting.
 
-The syntax of "if" expressions in HaPyLi is the same as those in Lisp.
+The syntax of `if` expressions in HaPyLi is the same as those in Lisp.
 
 [File: if.hpl](./if.hpl)
 
@@ -81,9 +81,9 @@ def main () =
 ```
 
 Since HaPyLi is typeless, the condition of the if-statement behaves much as it
-would in C. The value 0 represents "false" and any non-zero value represents
-"true". Some of the functions in the HaPyLi Standard Library, however, assume
-that "true" is denoted by the value 1 instead of just anything non-zero, so you
+would in C. The value 0 represents `false` and any non-zero value represents
+`true`. Some of the functions in the HaPyLi Standard Library, however, assume
+that `true` is denoted by the value 1 instead of just anything non-zero, so you
 must be careful.
 
 ## Do Expressions
@@ -110,9 +110,9 @@ def main () =
              (print-string "1234567\n"))
 ```
 
-We don't need to do this. HaPyLi provides the "do" function, which can accept
+We don't need to do this. HaPyLi provides the `do` function, which can accept
 any number of parameters. You don't need to pollute your application with 100
-'execute' definitions as above just because you want to chain together 100
+`execute` definitions as above just because you want to chain together 100
 operations (although I can't imagine you ever wanting to chain together more
 than just a few - but at least you now can).
 
@@ -128,7 +128,7 @@ def main () =
         (print-string "... and so on... \n"))
 ```
 
-Furthermore, "do" expressions return the value returned by their last argument.
+Furthermore, `do` expressions return the value returned by their last argument.
 This can be very useful for computing and returning a result after a series of
 IO operations, like in prompts.
 

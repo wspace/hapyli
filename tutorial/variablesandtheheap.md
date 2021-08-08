@@ -52,19 +52,19 @@ def main () =
 ```
 
 The example above illustrates every type of global variable you can define in
-HaPyLi and how to read and write to them. The '*' on each variable name isn't
+HaPyLi and how to read and write to them. The `*` on each variable name isn't
 anything special - any identifier can contain this character. It is a naming
 convention I use to distinguish pointers from other kinds of variables. All
 global variables are pointers to data in the heap. To read from these variables,
-you must use the "ref" function defined in the HaPyLi Standard Library.
-Likewise, to write to these variables you must use the "set" function.
+you must use the `ref` function defined in the HaPyLi Standard Library.
+Likewise, to write to these variables you must use the `set` function.
 
-"ref" accepts a pointer to an array and an index and returns the data stored at
-that index within the array. (ref \*X 0) is equivalent to (ref \*X).
+`ref` accepts a pointer to an array and an index and returns the data stored at
+that index within the array. `(ref *X 0)` is equivalent to `(ref *X)`.
 
-Likewise, "set" accepts a pointer to an array, an index, and a value, and writes
-that value to the array at the index. (set \*array 0 value) is equivalent to
-(set \*variable value).
+Likewise, `set` accepts a pointer to an array, an index, and a value, and writes
+that value to the array at the index. `(set *array 0 value)` is equivalent to
+`(set *variable value)`.
 
 You must be extremely careful, however, because HaPyLi doesn't provide any
 bounds checking when reading from or writing to arrays. Writing beyond the end
@@ -74,15 +74,15 @@ actually crash the Whitespace interpreter.
 
 ## Local Variables As Pointers
 
-The HaPyLi Standard Library defines the "alloc" function which is similar to the
-"malloc" function in C. It accepts a single parameter indicating the size of the
+The HaPyLi Standard Library defines the `alloc` function which is similar to the
+`malloc` function in C. It accepts a single parameter indicating the size of the
 array to allocate and returns a pointer to that array.
 
-While C provides both "malloc" and "free", there is no equivalent to "free" in
+While C provides both `malloc` and `free`, there is no equivalent to `free` in
 HaPyLi. Sorry, I never wrote one. The HaPyLi Standard Library is unfinished. You
 can write your own, however, if it's so important to you. I'll explain
 everything you need to know in order to do that in the next section. For now,
-here are examples of "alloc".
+here are examples of `alloc`.
 
 [File: alloc.hpl](./alloc.hpl)
 
@@ -116,10 +116,10 @@ def main () =
 ```
 
 Remember that HaPyLi is a typeless language. All variables are ultimately
-integers. In the example above, \*global and \*local evaluate to the address in
-heap memory where their data is stored. You can add to and subtract from these
-pointers as if they were ordinary integers - which is exactly how the "copy"
-function works.
+integers. In the example above, `*global` and `*local` evaluate to the address
+in heap memory where their data is stored. You can add to and subtract from
+these pointers as if they were ordinary integers - which is exactly how the
+`copy` function works.
 
 The example below further illustrates this point:
 
@@ -145,9 +145,9 @@ def main () =
             (print-array *B 3 0))
 ```
 
-The local variable \*B is just like any other array. It points to the beginning
-of its data in memory. It doesn't matter that \*B points to some of the same
-data as \*A.
+The local variable `*B` is just like any other array. It points to the beginning
+of its data in memory. It doesn't matter that `*B` points to some of the same
+data as `*A`.
 
 ## Tutorial
 

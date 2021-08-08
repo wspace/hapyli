@@ -16,9 +16,9 @@ def main() = (print-string "Hello, world!")
 ; just as in LISP.
 ```
 
-All programs must define a "main" function (lower case) with zero parameters.
+All programs must define a `main` function (lower case) with zero parameters.
 The body of any function consists of just a single expression. In the above
-example, "print-string" is an imported function of one parameter.
+example, `print-string` is an imported function of one parameter.
 
 Function names may contain any of the following characters:
 
@@ -28,9 +28,9 @@ Function names may contain any of the following characters:
 
 ## Power
 
-The next example defines a recursive function which accepts two arguments "x"
-and "y" and returns the value of "x" raised to the power of "y". (Yes, this is a
-bad example because 'power' goes into an infinite loop if "y" is less than 1).
+The next example defines a recursive function which accepts two arguments `x`
+and `y` and returns the value of `x` raised to the power of `y`. (Yes, this is a
+bad example because `power` goes into an infinite loop if `y` is less than 1).
 Notice that there are no commas between function parameters.
 
 [File: power1.hpl](./power1.hpl)
@@ -90,10 +90,10 @@ def main() = (f 1 2 3)
 ## Inline Functions
 
 Due to the nature of the Whitespace virtual machine, ordinary function calls are
-extremely inefficient. For each "call" instruction in your program, Whitespace
+extremely inefficient. For each `call` instruction in your program, Whitespace
 will search through every instruction in the entire program to find the
 appropriate label to jump to. To avoid this overhead, you may define functions
-to be inlined. Calls to inlined functions do not emit a "call" instruction, but
+to be inlined. Calls to inlined functions do not emit a `call` instruction, but
 are instead replaced by a copy of the entire function's body. The only
 restriction is that inlined functions cannot be recursive.
 

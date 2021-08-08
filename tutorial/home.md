@@ -1,18 +1,18 @@
 # The HaPyLi Programming Language
 
 - [Home](./home.md)
-- [Forums](./apps/forums/)
+- [Forums](https://web.archive.org/web/20120712024855/http://hapyli.webs.com:80/apps/forums/)
 - [Examples](./examples.md)
 
 ## What is HaPyLi?
 
 HaPyLi is a programming language designed to compile to
-[Whitespace](http://compsoc.dur.ac.uk/whitespace/index.php). Its syntax was
-derived from <u>Ha</u>skell, <u>Py</u>thon, and <u>Li</u>sp, hence the name. I
-created it partly to learn more about text parsers, regular expressions,
-compilers, Haskell, and Python (it was originally written in Haskell, but that
-language felt too clunky. I haven't yet mastered proper abstraction in
-functional languages).
+[Whitespace](https://web.archive.org/web/20150717203521/http://compsoc.dur.ac.uk:80/whitespace/index.php).
+Its syntax was derived from <u>Ha</u>skell, <u>Py</u>thon, and <u>Li</u>sp,
+hence the name. I created it partly to learn more about text parsers, regular
+expressions, compilers, Haskell, and Python (it was originally written in
+Haskell, but that language felt too clunky. I haven't yet mastered proper
+abstraction in functional languages).
 
 [Download the HaPyLi compiler](./HaPyLi.7z)
 (requires Python v2.5).
