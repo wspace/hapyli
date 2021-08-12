@@ -1,8 +1,7 @@
 # The HaPyLi Programming Language
 
-- [Home](./home.md)
 - [Forums](https://web.archive.org/web/20120712024855/http://hapyli.webs.com:80/apps/forums/)
-- [Examples](./examples.md)
+- [Examples](tutorial/examples.md)
 
 ## What is HaPyLi?
 
@@ -14,10 +13,9 @@ expressions, compilers, Haskell, and Python (it was originally written in
 Haskell, but that language felt too clunky. I haven't yet mastered proper
 abstraction in functional languages).
 
-[Download the HaPyLi compiler](./HaPyLi.7z)
-(requires Python v2.5).
+<s>Download the HaPyLi compiler (requires Python v2.5).</s>
 
-[Start the tutorial](./functions.md).
+[Start the tutorial](tutorial/functions.md).
 
 ## Umm... what the hell? Why?
 
@@ -29,9 +27,9 @@ glad to be out of there!
 
 ## Tutorial
 
-1. [Functions](./functions.md)
-2. [Expressions](./expressions.md)
-3. [Variables and the Heap](./variablesandtheheap.md)
-4. [Embedding Whitespace](./embeddingwhitespace.md)
+1. [Functions](tutorial/functions.md)
+2. [Expressions](tutorial/expressions.md)
+3. [Variables and the Heap](tutorial/variablesandtheheap.md)
+4. [Embedding Whitespace](tutorial/embeddingwhitespace.md)
 
 Copyright ©2010
